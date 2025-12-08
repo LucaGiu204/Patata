@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Ryzen.DESKTOP-41CA7K2\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ryzen.DESKTOP-41CA7K2\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Patata\\Patata.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Patata\\Patata.csproj",
       "projectName": "Patata",
-      "projectPath": "C:\\Users\\Ryzen.DESKTOP-41CA7K2\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Patata\\Patata.csproj",
-      "packagesPath": "C:\\Users\\Ryzen.DESKTOP-41CA7K2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ryzen.DESKTOP-41CA7K2\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Patata\\obj\\",
+      "projectPath": "C:\\Users\\User\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Patata\\Patata.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\Patata\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ryzen.DESKTOP-41CA7K2\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"

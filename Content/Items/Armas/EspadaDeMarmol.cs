@@ -2,6 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.GameContent.Creative;
+using Microsoft.Xna.Framework;
 using Patata.Content.Items.Materials; // Importing custom material namespace
 
 namespace Patata.Content.Items.Armas // Where is your code locates
@@ -44,6 +45,19 @@ namespace Patata.Content.Items.Armas // Where is your code locates
             recipe.AddIngredient(ItemID.Wood, 3); // Also, we are using vanilla material to craft, 3 Wood
             recipe.AddTile(TileID.Anvils); // Crafting station we need for craft, WorkBenches, Anvils etc. You can find them here - https://terraria.wiki.gg/wiki/Tile_IDs
             recipe.Register();
+        }
+        public override void MeleeEffects(Player player, Rectangle hitbox)
+        {
+            if (Main.rand.NextBool(3)) // With 1/3 chance per tick (60 ticks = 1 second)...
+            {
+                // ...spawning dust
+                Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), // Position to spawn
+                hitbox.Width, hitbox.Height, // Width and Height
+                DustID.Poisoned, // Dust type. Check https://terraria.wiki.gg/wiki/Dust_IDs
+                0, 0, // Speed X and Speed Y of dust, it have some randomization
+                125); // Dust transparency, 0 - full visibility, 255 - full transparency
+
+            }
         }
     }
 }
