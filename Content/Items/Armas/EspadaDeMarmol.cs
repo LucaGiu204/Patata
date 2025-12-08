@@ -2,9 +2,9 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.GameContent.Creative;
-using patata.Content.Items.Materials; // Importing custom material namespace
+using Patata.Content.Items.Materials; // Importing custom material namespace
 
-namespace patata.Content.Items.Armas // Where is your code locates
+namespace Patata.Content.Items.Armas // Where is your code locates
 {
     public class EspadaDeMarmol : ModItem
     {
