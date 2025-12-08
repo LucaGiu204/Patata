@@ -10,4 +10,14 @@ Items: {
 			It's snowing on Mt.Fuji
 			'''
 	}
+
+	Marmol: {
+		DisplayName: Marmol
+		Tooltip: ""
+	}
+
+	EspadaDeMarmol: {
+		DisplayName: Espada De Marmol
+		Tooltip: ""
+	}
 }
