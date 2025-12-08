@@ -40,7 +40,7 @@ namespace patata.Content.Items.Weapons.Melee // Where is your code locates
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient<SteelShard>(7); // We are using custom material for the craft, 7 Steel Shards
+            recipe.AddIngredient<Marmol>(7); // We are using custom material for the craft, 7 Steel Shards
             recipe.AddIngredient(ItemID.Wood, 3); // Also, we are using vanilla material to craft, 3 Wood
             recipe.AddTile(TileID.Anvils); // Crafting station we need for craft, WorkBenches, Anvils etc. You can find them here - https://terraria.wiki.gg/wiki/Tile_IDs
             recipe.Register();
