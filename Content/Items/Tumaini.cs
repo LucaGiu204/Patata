@@ -12,11 +12,11 @@ namespace Patata.Content.Items
 		// The Display Name and Tooltip of this item can be edited in the 'Localization/en-US_Mods.Patata.hjson' file.
 		public override void SetDefaults()
 		{
-			Item.damage = 50;
+			Item.damage = 75;
 			Item.DamageType = DamageClass.Melee;
-			Item.width = 40;
+			Item.width = 50;
 			Item.height = 40;
-			Item.useTime = 20;
+			Item.useTime = 10;
 			Item.useAnimation = 20;
 			Item.useStyle = ItemUseStyleID.Swing;
 			Item.knockBack = 6;
