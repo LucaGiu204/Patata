@@ -16,8 +16,8 @@ namespace Patata.Content.Items
 			Item.DamageType = DamageClass.Melee;
 			Item.width = 1000;
 			Item.height = 1000;
-			Item.useTime = 1;
-			Item.useAnimation = 1;
+			Item.useTime = 10;
+			Item.useAnimation = 10;
 			Item.useStyle = ItemUseStyleID.Swing;
 			Item.knockBack = 6;
 			Item.value = Item.buyPrice(silver: 1);
