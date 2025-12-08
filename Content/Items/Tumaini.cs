@@ -14,10 +14,10 @@ namespace Patata.Content.Items
 		{
 			Item.damage = 75;
 			Item.DamageType = DamageClass.Melee;
-			Item.width = 50;
-			Item.height = 40;
-			Item.useTime = 10;
-			Item.useAnimation = 20;
+			Item.width = 100;
+			Item.height = 100;
+			Item.useTime = 30;
+			Item.useAnimation = 30;
 			Item.useStyle = ItemUseStyleID.Swing;
 			Item.knockBack = 6;
 			Item.value = Item.buyPrice(silver: 1);
