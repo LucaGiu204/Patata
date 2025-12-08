@@ -17,8 +17,8 @@ namespace Patata.Content.Items.Armas // Where is your code locates
         public override void SetDefaults()
         {
             // Visual properties
-            Item.width = 24; // Width of an item sprite
-            Item.height = 24; // Height of an item sprite
+            Item.width = 20; // Width of an item sprite
+            Item.height = 20; // Height of an item sprite
             Item.scale = 2f; // Multiplicator of item size, for example is you set this to 2f our sword will be biger twice. IMPORTANT: If you are using numbers with floating point, write "f" in their end, like 1.5f, 3.14f, 2.1278495f etc.
             Item.rare = ItemRarityID.Blue; // The color of item's name in game. Check https://terraria.wiki.gg/wiki/Rarity
 
