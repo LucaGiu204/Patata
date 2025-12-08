@@ -6,7 +6,7 @@ using patata.Content.Items.Materials; // Importing custom material namespace
 
 namespace patata.Content.Items.Armas // Where is your code locates
 {
-    public class Lasesinacameyos : ModItem
+    public class EspadaDeMarmol : ModItem
     {
         public override void SetStaticDefaults()
         {
