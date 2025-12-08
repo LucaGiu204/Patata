@@ -14,8 +14,8 @@ namespace Patata.Content.Items
 		{
 			Item.damage = 75;
 			Item.DamageType = DamageClass.Melee;
-			Item.width = 100;
-			Item.height = 100;
+			Item.width = 1000;
+			Item.height = 1000;
 			Item.useTime = 30;
 			Item.useAnimation = 30;
 			Item.useStyle = ItemUseStyleID.Swing;
