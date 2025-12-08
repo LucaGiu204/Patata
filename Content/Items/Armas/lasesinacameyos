@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 using Terraria.GameContent.Creative;
 using patata.Content.Items.Materials; // Importing custom material namespace
 
-namespace patata.Content.Items.Armas.Melee // Where is your code locates
+namespace patata.Content.Items.Armas // Where is your code locates
 {
     public class lasesinacameyos : ModItem
     {
