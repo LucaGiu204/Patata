@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Patata")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92deab90b6a9f2cef02aeaf4ecabe2630d92d717")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+08ed12b578454fdefd0cd7320cc551cce4b36161")]
 [assembly: System.Reflection.AssemblyProductAttribute("Patata")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Patata")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
