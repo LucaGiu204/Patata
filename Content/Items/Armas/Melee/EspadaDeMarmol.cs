@@ -5,7 +5,7 @@ using Terraria.GameContent.Creative;
 using Microsoft.Xna.Framework;
 using Patata.Content.Items.Materials; // Importing custom material namespace
 
-namespace Patata.Content.Items.Armas // Where is your code locates
+namespace Patata.Content.Items.Armas.melee // Where is your code locates
 {
     public class EspadaDeMarmol : ModItem
     {

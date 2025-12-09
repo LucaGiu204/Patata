@@ -5,9 +5,9 @@ using Terraria.GameContent.Creative;
 using Microsoft.Xna.Framework;
 using Patata.Content.Items.Materials; 
 
-namespace Patata.Content.Items.Armas 
+namespace Patata.Content.Items.Armas.Rango
 {
-    public class LaDevastaCulos : ModItem
+    public class ArcoDeMarmol : ModItem
     {
         public override void SetStaticDefaults()
         {
