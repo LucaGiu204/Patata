@@ -3,41 +3,53 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.GameContent.Creative;
 using Microsoft.Xna.Framework;
-using Patata.Content.Items.Materials; // Importing custom material namespace
+using Patata.Content.Items.Materials; 
 
-namespace Patata.Content.Items.Armas // Where is your code locates
+namespace Patata.Content.Items.Armas 
 {
     public class LaDevastaCulos : ModItem
     {
-         public override void SetStaticDefaults()
+        public override void SetStaticDefaults()
         {
-           Item.width = 40; // Width of an item sprite
-           Item.height = 40; // Height of an item sprite
-           Item.scale = 2f; // Multiplicator of item size, for example is you set this to 2f our sword will be biger twice. IMPORTANT: If you are using numbers with floating point, write "f" in their end, like 1.5f, 3.14f, 2.1278495f etc.            Item.rare = ItemRarityID.Blue; // The color of item's name in game. Check https://terraria.wiki.gg/wiki/Rarit
-           Item.rare = ItemRarityID.Blue; // The color of item's name in game. Check https://terraria.wiki.gg/wiki/Rarity
-            // Combat properties
-            Item.damage = 1400; // Item damage
-            Item.DamageType = DamageClass.Ranged; // What type of damage item is deals, Melee, Ranged, Magic, Summon, Generic (takes bonuses from all damage multipliers), Default (doesn't take bonuses from any damage multipliers)
-            // useTime and useAnimation often use the same value, but we'll see examples where they don't use the same values
-            Item.useTime = 15; // How long the swing lasts in ticks (60 ticks = 1 second)
-            Item.useAnimation = 15; // How long the swing animation lasts in ticks (60 ticks = 1 second)
-            Item.knockBack = 19f; // How far the sword punches enemies, 20 is maximal value
-            Item.autoReuse = true; // Can the item auto swing by holding the attack button
-            Item.ammo = AmmoID.Arrow;
-
-            // Other properties
-            Item.value = 10000000; // Item sell price in copper coins
-            Item.useStyle = ItemUseStyleID.Shoot; // This is how you're holding the weapon, visit https://terraria.wiki.gg/wiki/Use_Style_IDs for list of possible use styles
-            Item.UseSound = SoundID.Item1; // What sound is played when using the item, all sounds can be found here - https://terraria.wiki.gg/wiki/Sound_IDs
+            // Esto es lo ÚNICO que debe ir aquí (configuración del Journey Mode)
+            CreativeItemSacrificesCatalog.Instance.SacrificeCountNeededByItemId[Type] = 1; 
         }
 
-        // Creating item craft
+        public override void SetDefaults()
+        {
+            // === PROPIEDADES VISUALES ===
+            Item.width = 40; 
+            Item.height = 40; 
+            Item.scale = 2f; // Tu arco es gigante, ¡ojo con el tamaño!
+            Item.rare = ItemRarityID.Blue; 
+
+            // === PROPIEDADES DE COMBATE ===
+            Item.damage = 1400; // ¿1400 de daño? ¡Es nuclear! (Cuidado con el balanceo jaja)
+            Item.DamageType = DamageClass.Ranged; // Importante: Ranged para arcos
+            Item.useTime = 15; 
+            Item.useAnimation = 15; 
+            Item.knockBack = 19f; 
+            Item.autoReuse = true; 
+
+            // === LO QUE TE FALTABA PARA QUE DISPARE ===
+            Item.useStyle = ItemUseStyleID.Shoot; // Animación de disparo
+            Item.noMelee = true; // Importante: Para que el arco en sí no golpee, solo la flecha
+            
+            Item.shoot = ProjectileID.PurificationPowder; // Valor obligatorio (10) para que sepa que dispara
+            Item.shootSpeed = 16f; // La velocidad de la flecha
+            Item.useAmmo = AmmoID.Arrow; // Usa flechas del inventario
+
+            // === OTRAS PROPIEDADES ===
+            Item.value = 10000000; 
+            Item.UseSound = SoundID.Item5; // Cambié a Item5 que es sonido de flecha (Item1 es espada)
+        }
+
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient<Marmol>(7); // We are using custom material for the craft, 7 Steel Shards
-            recipe.AddIngredient(ItemID.Wood, 3); // Also, we are using vanilla material to craft, 3 Wood
-            recipe.AddTile(TileID.Anvils); // Crafting station we need for craft, WorkBenches, Anvils etc. You can find them here - https://terraria.wiki.gg/wiki/Tile_IDs
+            recipe.AddIngredient<Marmol>(7); 
+            recipe.AddIngredient(ItemID.Wood, 3); 
+            recipe.AddTile(TileID.Anvils); 
             recipe.Register();
         }
     }
