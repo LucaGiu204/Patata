@@ -20,4 +20,9 @@ Items: {
 		DisplayName: Espada De Marmol
 		Tooltip: ""
 	}
+
+	LaDevastaCulos: {
+		DisplayName: La Devasta Culos
+		Tooltip: ""
+	}
 }
