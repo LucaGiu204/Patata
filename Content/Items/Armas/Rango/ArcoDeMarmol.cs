@@ -26,7 +26,7 @@ namespace Patata.Content.Items.Armas.Rango
             // === PROPIEDADES DE COMBATE ===
             Item.damage = 1400; // ¿1400 de daño? ¡Es nuclear! (Cuidado con el balanceo jaja)
             Item.DamageType = DamageClass.Ranged; // Importante: Ranged para arcos
-            Item.useTime = 15; 
+            Item.useTime = 5; 
             Item.useAnimation = 15; 
             Item.knockBack = 19f; 
             Item.autoReuse = true; 

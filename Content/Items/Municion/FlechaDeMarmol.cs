@@ -31,5 +31,14 @@ namespace Patata.Content.Items.Municion
             Item.shootSpeed = 6f; // Velocidad del proyectil
             Item.ammo = AmmoID.Arrow; // Se usa como munición de flechas
         }
+        // Creating item craft
+        public override void AddRecipes()
+        {
+            Recipe recipe = CreateRecipe();
+            recipe.AddIngredient<Marmol>(5); // We are using custom material for the craft, 7 Steel Shards
+            recipe.AddIngredient(ItemID.Wood, 3); // Also, we are using vanilla material to craft, 3 Wood
+            recipe.AddTile(TileID.Anvils); // Crafting station we need for craft, WorkBenches, Anvils etc. You can find them here - https://terraria.wiki.gg/wiki/Tile_ID
+            recipe.Register();
+        }
     }
 }
